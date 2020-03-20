@@ -1,0 +1,9 @@
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe.config
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.exe
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\bin\Debug\WindowsFormsApp4.pdb
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csprojAssemblyReference.cache
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Form1.resources
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.Properties.Resources.resources
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.GenerateResource.cache
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.exe
+D:\программирование\ВП\Laba\WindowsFormsApp1\WindowsFormsApp4\obj\Debug\WindowsFormsApp4.pdb
