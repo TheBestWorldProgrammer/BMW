@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище booksModel" Provider="Npgsql" ProviderManifestToken="11.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="autor">
+          <Key>
+            <PropertyRef Name="id_autor" />
+          </Key>
+          <Property Name="id_autor" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="surname" Type="text" Nullable="false" />
+          <Property Name="name" Type="text" Nullable="false" />
+          <Property Name="lastname" Type="text" />
+          <Property Name="birthday" Type="date" />
+        </EntityType>
+        <EntityType Name="book">
+          <Key>
+            <PropertyRef Name="id_book" />
+          </Key>
+          <Property Name="id_autor" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_book" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="text" Nullable="false" />
+          <Property Name="year" Type="int4" />
+        </EntityType>
+        <EntityType Name="buyers">
+          <Key>
+            <PropertyRef Name="id_buyers" />
+          </Key>
+          <Property Name="id_buyers" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_buyers" Type="text" Nullable="false" />
+          <Property Name="city_buyers" Type="text" />
+          <Property Name="type" Type="text" />
+        </EntityType>
+        <EntityType Name="publish">
+          <Key>
+            <PropertyRef Name="id_publish" />
+          </Key>
+          <Property Name="id_publish" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name_pub" Type="text" Nullable="false" />
+          <Property Name="city" Type="text" />
+        </EntityType>
+        <!--Ошибки, обнаруженные при создании:
+предупреждение 6005: Тип данных "money" в настоящее время не поддерживается для целевой версии платформы Entity Framework; столбец "pb_price" в таблице "books.public.purch_book" был исключен.-->
+        <EntityType Name="purch_book">
+          <Key>
+            <PropertyRef Name="id_book" />
+            <PropertyRef Name="id_publish" />
+            <PropertyRef Name="id_purchase" />
+          </Key>
+          <Property Name="id_book" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_publish" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_purchase" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="pb_count" Type="int4" />
+        </EntityType>
+        <EntityType Name="purchase">
+          <Key>
+            <PropertyRef Name="id_purchase" />
+          </Key>
+          <Property Name="id_buyers" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_purchase" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="date_purchase" Type="date" />
+        </EntityType>
+        <Association Name="book_id_autor_fkey">
+          <End Role="autor" Type="Self.autor" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="autor">
+              <PropertyRef Name="id_autor" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="id_autor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_book_fkey">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="id_book" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_publish_fkey">
+          <End Role="publish" Type="Self.publish" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="publish">
+              <PropertyRef Name="id_publish" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_publish" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_purchase_fkey">
+          <End Role="purchase" Type="Self.purchase" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="purchase">
+              <PropertyRef Name="id_purchase" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_purchase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purchase_id_buyers_fkey">
+          <End Role="buyers" Type="Self.buyers" Multiplicity="1" />
+          <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="buyers">
+              <PropertyRef Name="id_buyers" />
+            </Principal>
+            <Dependent Role="purchase">
+              <PropertyRef Name="id_buyers" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище booksModelContainer">
+          <EntitySet Name="autor" EntityType="Self.autor" Schema="public" store:Type="Tables" />
+          <EntitySet Name="book" EntityType="Self.book" Schema="public" store:Type="Tables" />
+          <EntitySet Name="buyers" EntityType="Self.buyers" Schema="public" store:Type="Tables" />
+          <EntitySet Name="publish" EntityType="Self.publish" Schema="public" store:Type="Tables" />
+          <EntitySet Name="purch_book" EntityType="Self.purch_book" Schema="public" store:Type="Tables" />
+          <EntitySet Name="purchase" EntityType="Self.purchase" Schema="public" store:Type="Tables" />
+          <AssociationSet Name="book_id_autor_fkey" Association="Self.book_id_autor_fkey">
+            <End Role="autor" EntitySet="autor" />
+            <End Role="book" EntitySet="book" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_book_fkey" Association="Self.purch_book_id_book_fkey">
+            <End Role="book" EntitySet="book" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_publish_fkey" Association="Self.purch_book_id_publish_fkey">
+            <End Role="publish" EntitySet="publish" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_purchase_fkey" Association="Self.purch_book_id_purchase_fkey">
+            <End Role="purchase" EntitySet="purchase" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+          <AssociationSet Name="purchase_id_buyers_fkey" Association="Self.purchase_id_buyers_fkey">
+            <End Role="buyers" EntitySet="buyers" />
+            <End Role="purchase" EntitySet="purchase" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="booksModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="autor">
+          <Key>
+            <PropertyRef Name="id_autor" />
+          </Key>
+          <Property Name="id_autor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="lastname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="birthday" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="book" Relationship="Self.book_id_autor_fkey" FromRole="autor" ToRole="book" />
+        </EntityType>
+        <EntityType Name="book">
+          <Key>
+            <PropertyRef Name="id_book" />
+          </Key>
+          <Property Name="id_autor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_book" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="year" Type="Int32" />
+          <NavigationProperty Name="autor" Relationship="Self.book_id_autor_fkey" FromRole="book" ToRole="autor" />
+          <NavigationProperty Name="purch_book" Relationship="Self.purch_book_id_book_fkey" FromRole="book" ToRole="purch_book" />
+        </EntityType>
+        <EntityType Name="buyers">
+          <Key>
+            <PropertyRef Name="id_buyers" />
+          </Key>
+          <Property Name="id_buyers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_buyers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="city_buyers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="purchase" Relationship="Self.purchase_id_buyers_fkey" FromRole="buyers" ToRole="purchase" />
+        </EntityType>
+        <EntityType Name="publish">
+          <Key>
+            <PropertyRef Name="id_publish" />
+          </Key>
+          <Property Name="id_publish" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name_pub" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="city" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="purch_book" Relationship="Self.purch_book_id_publish_fkey" FromRole="publish" ToRole="purch_book" />
+        </EntityType>
+        <EntityType Name="purch_book">
+          <Key>
+            <PropertyRef Name="id_book" />
+            <PropertyRef Name="id_publish" />
+            <PropertyRef Name="id_purchase" />
+          </Key>
+          <Property Name="id_book" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_publish" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_purchase" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="pb_count" Type="Int32" />
+          <NavigationProperty Name="book" Relationship="Self.purch_book_id_book_fkey" FromRole="purch_book" ToRole="book" />
+          <NavigationProperty Name="publish" Relationship="Self.purch_book_id_publish_fkey" FromRole="purch_book" ToRole="publish" />
+          <NavigationProperty Name="purchase" Relationship="Self.purch_book_id_purchase_fkey" FromRole="purch_book" ToRole="purchase" />
+        </EntityType>
+        <EntityType Name="purchase">
+          <Key>
+            <PropertyRef Name="id_purchase" />
+          </Key>
+          <Property Name="id_buyers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_purchase" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="date_purchase" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="buyers" Relationship="Self.purchase_id_buyers_fkey" FromRole="purchase" ToRole="buyers" />
+          <NavigationProperty Name="purch_book" Relationship="Self.purch_book_id_purchase_fkey" FromRole="purchase" ToRole="purch_book" />
+        </EntityType>
+        <Association Name="book_id_autor_fkey">
+          <End Role="autor" Type="Self.autor" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="autor">
+              <PropertyRef Name="id_autor" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="id_autor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_book_fkey">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="id_book" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_book" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purchase_id_buyers_fkey">
+          <End Role="buyers" Type="Self.buyers" Multiplicity="1" />
+          <End Role="purchase" Type="Self.purchase" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="buyers">
+              <PropertyRef Name="id_buyers" />
+            </Principal>
+            <Dependent Role="purchase">
+              <PropertyRef Name="id_buyers" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_publish_fkey">
+          <End Role="publish" Type="Self.publish" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="publish">
+              <PropertyRef Name="id_publish" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_publish" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="purch_book_id_purchase_fkey">
+          <End Role="purchase" Type="Self.purchase" Multiplicity="1" />
+          <End Role="purch_book" Type="Self.purch_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="purchase">
+              <PropertyRef Name="id_purchase" />
+            </Principal>
+            <Dependent Role="purch_book">
+              <PropertyRef Name="id_purchase" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="booksEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="autor" EntityType="Self.autor" />
+          <EntitySet Name="book" EntityType="Self.book" />
+          <EntitySet Name="buyers" EntityType="Self.buyers" />
+          <EntitySet Name="publish" EntityType="Self.publish" />
+          <EntitySet Name="purch_book" EntityType="Self.purch_book" />
+          <EntitySet Name="purchase" EntityType="Self.purchase" />
+          <AssociationSet Name="book_id_autor_fkey" Association="Self.book_id_autor_fkey">
+            <End Role="autor" EntitySet="autor" />
+            <End Role="book" EntitySet="book" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_book_fkey" Association="Self.purch_book_id_book_fkey">
+            <End Role="book" EntitySet="book" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+          <AssociationSet Name="purchase_id_buyers_fkey" Association="Self.purchase_id_buyers_fkey">
+            <End Role="buyers" EntitySet="buyers" />
+            <End Role="purchase" EntitySet="purchase" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_publish_fkey" Association="Self.purch_book_id_publish_fkey">
+            <End Role="publish" EntitySet="publish" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+          <AssociationSet Name="purch_book_id_purchase_fkey" Association="Self.purch_book_id_purchase_fkey">
+            <End Role="purchase" EntitySet="purchase" />
+            <End Role="purch_book" EntitySet="purch_book" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище booksModelContainer" CdmEntityContainer="booksEntities">
+          <EntitySetMapping Name="autor">
+            <EntityTypeMapping TypeName="booksModel.autor">
+              <MappingFragment StoreEntitySet="autor">
+                <ScalarProperty Name="id_autor" ColumnName="id_autor" />
+                <ScalarProperty Name="surname" ColumnName="surname" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="book">
+            <EntityTypeMapping TypeName="booksModel.book">
+              <MappingFragment StoreEntitySet="book">
+                <ScalarProperty Name="id_autor" ColumnName="id_autor" />
+                <ScalarProperty Name="id_book" ColumnName="id_book" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="year" ColumnName="year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="buyers">
+            <EntityTypeMapping TypeName="booksModel.buyers">
+              <MappingFragment StoreEntitySet="buyers">
+                <ScalarProperty Name="id_buyers" ColumnName="id_buyers" />
+                <ScalarProperty Name="name_buyers" ColumnName="name_buyers" />
+                <ScalarProperty Name="city_buyers" ColumnName="city_buyers" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="publish">
+            <EntityTypeMapping TypeName="booksModel.publish">
+              <MappingFragment StoreEntitySet="publish">
+                <ScalarProperty Name="id_publish" ColumnName="id_publish" />
+                <ScalarProperty Name="name_pub" ColumnName="name_pub" />
+                <ScalarProperty Name="city" ColumnName="city" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="purch_book">
+            <EntityTypeMapping TypeName="booksModel.purch_book">
+              <MappingFragment StoreEntitySet="purch_book">
+                <ScalarProperty Name="id_book" ColumnName="id_book" />
+                <ScalarProperty Name="id_publish" ColumnName="id_publish" />
+                <ScalarProperty Name="id_purchase" ColumnName="id_purchase" />
+                <ScalarProperty Name="pb_count" ColumnName="pb_count" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="purchase">
+            <EntityTypeMapping TypeName="booksModel.purchase">
+              <MappingFragment StoreEntitySet="purchase">
+                <ScalarProperty Name="id_buyers" ColumnName="id_buyers" />
+                <ScalarProperty Name="id_purchase" ColumnName="id_purchase" />
+                <ScalarProperty Name="date_purchase" ColumnName="date_purchase" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

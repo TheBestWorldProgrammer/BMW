@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище booksModelContainer" CdmEntityContainer="booksEntities">
+    <EntitySetMapping Name="autor">
+      <EntityTypeMapping TypeName="booksModel.autor">
+        <MappingFragment StoreEntitySet="autor">
+          <ScalarProperty Name="id_autor" ColumnName="id_autor" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="birthday" ColumnName="birthday" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="book">
+      <EntityTypeMapping TypeName="booksModel.book">
+        <MappingFragment StoreEntitySet="book">
+          <ScalarProperty Name="id_autor" ColumnName="id_autor" />
+          <ScalarProperty Name="id_book" ColumnName="id_book" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="year" ColumnName="year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="buyers">
+      <EntityTypeMapping TypeName="booksModel.buyers">
+        <MappingFragment StoreEntitySet="buyers">
+          <ScalarProperty Name="id_buyers" ColumnName="id_buyers" />
+          <ScalarProperty Name="name_buyers" ColumnName="name_buyers" />
+          <ScalarProperty Name="city_buyers" ColumnName="city_buyers" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="publish">
+      <EntityTypeMapping TypeName="booksModel.publish">
+        <MappingFragment StoreEntitySet="publish">
+          <ScalarProperty Name="id_publish" ColumnName="id_publish" />
+          <ScalarProperty Name="name_pub" ColumnName="name_pub" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purch_book">
+      <EntityTypeMapping TypeName="booksModel.purch_book">
+        <MappingFragment StoreEntitySet="purch_book">
+          <ScalarProperty Name="id_book" ColumnName="id_book" />
+          <ScalarProperty Name="id_publish" ColumnName="id_publish" />
+          <ScalarProperty Name="id_purchase" ColumnName="id_purchase" />
+          <ScalarProperty Name="pb_count" ColumnName="pb_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="purchase">
+      <EntityTypeMapping TypeName="booksModel.purchase">
+        <MappingFragment StoreEntitySet="purchase">
+          <ScalarProperty Name="id_buyers" ColumnName="id_buyers" />
+          <ScalarProperty Name="id_purchase" ColumnName="id_purchase" />
+          <ScalarProperty Name="date_purchase" ColumnName="date_purchase" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
