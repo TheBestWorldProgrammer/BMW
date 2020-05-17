@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SchoolModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="estimate">
+    <Key>
+      <PropertyRef Name="code_est" />
+    </Key>
+    <Property Name="code_est" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_est" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="code_shedule" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" ConcurrencyMode="None" />
+    <NavigationProperty Name="shedule" Relationship="Self.estimate_code_shedule_fkey" FromRole="estimate" ToRole="shedule" />
+  </EntityType>
+  <EntityType Name="lectors">
+    <Key>
+      <PropertyRef Name="code_lector" />
+    </Key>
+    <Property Name="code_lector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname_lector" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name_lector" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname_lector" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="birthday_lector" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="post" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="salary" Relationship="Self.salary_code_lector_fkey" FromRole="lectors" ToRole="salary" />
+    <NavigationProperty Name="shedule" Relationship="Self.shedule_code_lector_fkey" FromRole="lectors" ToRole="shedule" />
+  </EntityType>
+  <EntityType Name="parents">
+    <Key>
+      <PropertyRef Name="code_parent" />
+    </Key>
+    <Property Name="code_parent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname_parent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name_parent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname_parent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="students" Relationship="Self.students_code_parent_fkey" FromRole="parents" ToRole="students" />
+  </EntityType>
+  <EntityType Name="salary">
+    <Key>
+      <PropertyRef Name="code_salary" />
+    </Key>
+    <Property Name="code_salary" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code_lector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="work_hour" Type="Int32" />
+    <Property Name="experience" Type="Int32" />
+    <Property Name="mounth" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="summ" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="lectors" Relationship="Self.salary_code_lector_fkey" FromRole="salary" ToRole="lectors" />
+  </EntityType>
+  <EntityType Name="shedule">
+    <Key>
+      <PropertyRef Name="code_shedule" />
+    </Key>
+    <Property Name="code_shedule" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code_stud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code_subject" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code_lector" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date_classes" Type="DateTime" Precision="6" Nullable="false" />
+    <NavigationProperty Name="estimate" Relationship="Self.estimate_code_shedule_fkey" FromRole="shedule" ToRole="estimate" />
+    <NavigationProperty Name="lectors" Relationship="Self.shedule_code_lector_fkey" FromRole="shedule" ToRole="lectors" />
+    <NavigationProperty Name="students" Relationship="Self.shedule_code_stud_fkey" FromRole="shedule" ToRole="students" />
+    <NavigationProperty Name="subjects" Relationship="Self.shedule_code_subject_fkey" FromRole="shedule" ToRole="subjects" />
+  </EntityType>
+  <EntityType Name="students">
+    <Key>
+      <PropertyRef Name="code_stud" />
+    </Key>
+    <Property Name="code_stud" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="surname_stud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name_stud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="lastname_stud" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="birthday_stud" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="code_parent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="parents" Relationship="Self.students_code_parent_fkey" FromRole="students" ToRole="parents" />
+    <NavigationProperty Name="shedule" Relationship="Self.shedule_code_stud_fkey" FromRole="students" ToRole="shedule" />
+  </EntityType>
+  <EntityType Name="subjects">
+    <Key>
+      <PropertyRef Name="code_subject" />
+    </Key>
+    <Property Name="code_subject" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name_subj" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="shedule" Relationship="Self.shedule_code_subject_fkey" FromRole="subjects" ToRole="shedule" />
+  </EntityType>
+  <Association Name="estimate_code_shedule_fkey">
+    <End Role="shedule" Type="Self.shedule" Multiplicity="1" />
+    <End Role="estimate" Type="Self.estimate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="shedule">
+        <PropertyRef Name="code_shedule" />
+      </Principal>
+      <Dependent Role="estimate">
+        <PropertyRef Name="code_shedule" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="salary_code_lector_fkey">
+    <End Role="lectors" Type="Self.lectors" Multiplicity="1" />
+    <End Role="salary" Type="Self.salary" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lectors">
+        <PropertyRef Name="code_lector" />
+      </Principal>
+      <Dependent Role="salary">
+        <PropertyRef Name="code_lector" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="shedule_code_lector_fkey">
+    <End Role="lectors" Type="Self.lectors" Multiplicity="1" />
+    <End Role="shedule" Type="Self.shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="lectors">
+        <PropertyRef Name="code_lector" />
+      </Principal>
+      <Dependent Role="shedule">
+        <PropertyRef Name="code_lector" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="students_code_parent_fkey">
+    <End Role="parents" Type="Self.parents" Multiplicity="1" />
+    <End Role="students" Type="Self.students" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="parents">
+        <PropertyRef Name="code_parent" />
+      </Principal>
+      <Dependent Role="students">
+        <PropertyRef Name="code_parent" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="shedule_code_stud_fkey">
+    <End Role="students" Type="Self.students" Multiplicity="1" />
+    <End Role="shedule" Type="Self.shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="students">
+        <PropertyRef Name="code_stud" />
+      </Principal>
+      <Dependent Role="shedule">
+        <PropertyRef Name="code_stud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="shedule_code_subject_fkey">
+    <End Role="subjects" Type="Self.subjects" Multiplicity="1" />
+    <End Role="shedule" Type="Self.shedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="subjects">
+        <PropertyRef Name="code_subject" />
+      </Principal>
+      <Dependent Role="shedule">
+        <PropertyRef Name="code_subject" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SchoolEntitiesTrue" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="estimate" EntityType="Self.estimate" />
+    <EntitySet Name="lectors" EntityType="Self.lectors" />
+    <EntitySet Name="parents" EntityType="Self.parents" />
+    <EntitySet Name="salary" EntityType="Self.salary" />
+    <EntitySet Name="shedule" EntityType="Self.shedule" />
+    <EntitySet Name="students" EntityType="Self.students" />
+    <EntitySet Name="subjects" EntityType="Self.subjects" />
+    <AssociationSet Name="estimate_code_shedule_fkey" Association="Self.estimate_code_shedule_fkey">
+      <End Role="shedule" EntitySet="shedule" />
+      <End Role="estimate" EntitySet="estimate" />
+    </AssociationSet>
+    <AssociationSet Name="salary_code_lector_fkey" Association="Self.salary_code_lector_fkey">
+      <End Role="lectors" EntitySet="lectors" />
+      <End Role="salary" EntitySet="salary" />
+    </AssociationSet>
+    <AssociationSet Name="shedule_code_lector_fkey" Association="Self.shedule_code_lector_fkey">
+      <End Role="lectors" EntitySet="lectors" />
+      <End Role="shedule" EntitySet="shedule" />
+    </AssociationSet>
+    <AssociationSet Name="students_code_parent_fkey" Association="Self.students_code_parent_fkey">
+      <End Role="parents" EntitySet="parents" />
+      <End Role="students" EntitySet="students" />
+    </AssociationSet>
+    <AssociationSet Name="shedule_code_stud_fkey" Association="Self.shedule_code_stud_fkey">
+      <End Role="students" EntitySet="students" />
+      <End Role="shedule" EntitySet="shedule" />
+    </AssociationSet>
+    <AssociationSet Name="shedule_code_subject_fkey" Association="Self.shedule_code_subject_fkey">
+      <End Role="subjects" EntitySet="subjects" />
+      <End Role="shedule" EntitySet="shedule" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
