@@ -1,0 +1,219 @@
+CREATE TABLE Subjects(
+	Code_subject serial NOT NULL primary key,
+	Name_subj varchar(50) NOT NULL);
+    
+    CREATE TABLE Parents(
+	Code_parent serial NOT NULL primary key,
+	Surname_parent varchar(50) NOT NULL,
+	Name_parent varchar(50) NOT NULL,
+	Lastname_parent varchar(50),
+	Adress varchar(50) NOT NULL);  
+    
+    CREATE TABLE Students(
+	Code_stud serial NOT NULL primary key,
+	Surname_stud varchar(50) NOT NULL,
+	Name_stud varchar(50) NOT NULL,
+	Lastname_stud varchar(50),
+	Birthday_stud date NOT NULL,
+	Code_parent int NOT NULL);
+    
+    CREATE TABLE Lectors(
+	Code_lector serial NOT NULL primary key,
+	Surname_lector varchar(50) NOT NULL,
+	Name_lector varchar(50) NOT NULL,
+	Lastname_lector varchar(50),
+	Birthday_lector date NOT NULL,
+	Post varchar(50) NULL);
+
+    CREATE TABLE Shedule(
+	Code_shedule serial NOT NULL primary key,
+	Code_stud int NOT NULL,
+	Code_subject int NOT NULL,
+	Code_lector int NOT NULL,
+	Date_classes Date NOT NULL,
+	Time_classes varchar(50) not null);
+   
+   	Create table  Salary(
+	Code_salary serial NOT NULL primary key,
+	Code_lector int NOT NULL,
+	Work_hour int,
+	Experience int default 1,
+	Mounth varchar (50) not null,
+	summ int not null);
+
+CREATE TABLE Estimate(
+	Code_est serial NOT NULL primary key,
+	Name_est varchar(50) NOT NULL,
+	Code_shedule int NOT NULL);
+    
+    Alter Table Estimate add Foreign Key(Code_shedule)
+References Shedule(Code_shedule);
+
+    Alter Table Students add Foreign Key(Code_parent)
+References Parents(Code_parent);
+
+  Alter Table Salary add Foreign Key (Code_lector)
+References Lectors(Code_lector);
+
+  Alter Table Shedule add Foreign Key (Code_subject)
+References Subjects(Code_subject);
+
+	Alter Table Shedule add Foreign Key (Code_stud)
+References Students(Code_stud);
+	Alter Table Shedule add Foreign Key (Code_lector)
+References Lectors(Code_lector);
+
+
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Астафьева','Надежда','Ивановна','Октябрьск' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Амирьянова','Любовь','Анатольевна','Уфа' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Быкова','Екатерина','Викторовна','Казань' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Валеева','Марина','Николаевна','Кукмор' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Дроздова','Наталья','Дмитриевна','Пермь' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Смирнова','Татьяна','Александровна','Казань' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Суворова','Юлия','Максимовна','Казань' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Хуснутдинова','Эльвира','Сергеевна','Стерлитамак' );
+Insert into parents (Surname_parent,Name_parent,Lastname_parent,Adress)
+Values ('Червоненко','Людмила','Генадьевна','Сарапул' );
+
+
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Астафьев','Руслан','Викторович','12-03-1999',1);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Амирьянова','Ангелина','Ахметбековна','23-10-1998',2);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Быков','Максим','Владимирович','07-05-1999',3);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Валеев','Дмитрий','Анатольевич','07-12-1998',4);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Дроздова','Анастасия','Павловна','21-02-2000',5);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Смирнов','Максим','Леонидович','30-06-1999',6);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Суворов','Никита','Константинович','21-11-1998',7);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Хуснутдинов','Азат','Гафурович','13-01-1999',8);
+Insert into students (Surname_stud,Name_stud,Lastname_stud,birthday_stud,code_parent)
+Values ('Червоненко','Александр','Михайлович','01-04-1997',9);
+
+
+Insert into Subjects (Name_subj)
+Values ('СИИ');
+Insert into Subjects (Name_subj)
+Values ('ПИС');
+Insert into Subjects (Name_subj)
+Values ('ЧМ');
+Insert into Subjects (Name_subj)
+Values ('ВП');
+Insert into Subjects (Name_subj)
+Values ('МО');
+Insert into Subjects (Name_subj)
+Values ('СИАКОД');
+Insert into Subjects (Name_subj)
+Values ('АиГ');
+Insert into Subjects (Name_subj)
+Values ('БД');
+Insert into Subjects (Name_subj)
+Values ('Сетевые технологии');
+Insert into Subjects (Name_subj)
+Values ('ОС');
+
+
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Мангушева','Алина','Раисовна','12-04-1989', 'Старший программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Панченко','Оксана','Владимировна','23-11-1983', 'Веб-программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Антонова','Полина','Валерьевна','01-05-1987', 'Программист по ИИ');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Гильмутдинов','Руслан','Фаридович','09-04-1986', 'Программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Подъяпольский','Николай','Васильевич','12-09-1970', 'Программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Кашаев','Анвар','Умидович','15-07-1975', 'Старший программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Югов','Андрей','Валерьевич','11-11-1978', 'Программист');
+Insert into Lectors (Surname_lector,Name_lector,Lastname_lector,Birthday_lector,Post)
+Values ('Путин','Дмитрий','Анатольевич','18-10-1974', 'Программист по ИИ');
+
+
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (2,10,2,'May',25000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (1,12,1.5,'May',45000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (5,15,1,'May',20000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (4,10,1.5,'May',35000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (7,10,2,'May',30000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (3,10,1,'May',15000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (8,10,1.5,'May',32000 );
+Insert into Salary (Code_lector,Work_hour,Experience,mounth,summ)
+Values (6,10,1,'May',28000 );
+
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (3,4,1,'2019-06-04','8-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (3,2,2,'2019-06-04','11-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (3,1,3,'2019-06-04','12-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (2,5,6,'2019-06-04','17-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (2,10,2,'2019-06-04','16-00');
+Values (2,2,2,'2019-06-04','9-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (2,1,3,'2019-06-04','10-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (4,8,1,'2019-06-04','10-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (4,1,3,'2019-06-04','12-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (5,6,4,'2019-06-04','17-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (5,7,7,'2019-06-04','12-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (5,9,8,'2019-06-04','11-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (6,2,2,'2019-06-04','15-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (6,3,4,'2019-06-04','11-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (6,10,2,'2019-06-04','8-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (7,8,2,'2019-06-04','13-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (7,1,1,'2019-06-04','17-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (8,3,4,'2019-06-04','10-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (8,6,5,'2019-06-04','14-00');
+
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (9,1,3,'2019-06-04','15-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (9,4,1,'2019-06-04','12-00');
+Insert into shedule (Code_stud,Code_subject,Code_lector,Date_classes,Time_classes)
+Values (9,10,2,'2019-06-04','9-00');
+
+Insert into estimate (Name_est,Code_shedule)
+Values ('5',2);
+Insert into estimate (Name_est,Code_shedule)
+Values ('3',5);

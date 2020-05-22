@@ -1,0 +1,269 @@
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe.config
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.pdb
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csprojAssemblyReference.cache
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form1.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form2.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Properties.Resources.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.GenerateResource.cache
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.exe
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.pdb
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form3.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form4.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form5.resources
+D:\программирование\ВП\лаба 7\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Form6.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe.config
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.pdb
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csprojAssemblyReference.cache
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Properties.Resources.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.GenerateResource.cache
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.exe
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.pdb
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ComponentModel.Annotations.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.dll
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.pdb
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.xml
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.CopyComplete
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Start.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditShedule.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Main.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddStudent.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddTeacher.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddShedule.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSubject.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddParent.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditStudent.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditTeacher.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSalary.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditSalary.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddEstimate.resources
+D:\программирование\ВП\Курсач\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditEstimate.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe.config
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.pdb
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.pdb
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSalary.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditSalary.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddEstimate.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditEstimate.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Start.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditShedule.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Main.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddStudent.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddTeacher.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddShedule.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSubject.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddParent.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditStudent.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditTeacher.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Properties.Resources.resources
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.CopyComplete
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.exe
+C:\Users\User\Desktop\Курсовая работа\Kyrsovaya 2 etap formi\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.pdb
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe.config
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.exe
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Kyrsovaya 2 etap formi.pdb
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Bcl.HashCode.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.EntityFrameworkCore.Relational.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Caching.Memory.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Options.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.pdb
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\Npgsql.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Collections.Immutable.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSalary.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditSalary.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddEstimate.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditEstimate.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Start.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditShedule.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Main.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddStudent.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddTeacher.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddShedule.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddSubject.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.AddParent.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditStudent.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.EditTeacher.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya_2_etap_formi.Properties.Resources.resources
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.csproj.CopyComplete
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.exe
+C:\Users\User\Desktop\Курсовая работа\Курсовая работа 2 этап норм\Kyrsovaya 2 etap formi\obj\Debug\Kyrsovaya 2 etap formi.pdb
