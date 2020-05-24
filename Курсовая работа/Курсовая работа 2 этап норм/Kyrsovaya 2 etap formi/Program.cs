@@ -12,7 +12,15 @@ namespace Kyrsovaya_2_etap_formi
         /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
-        static void Main()
+
+        public static string Reg(string str)
+        {
+            str = str.ToUpper();
+            str = str[0]+str.Remove(0, 1).ToLower();
+            return str;
+           
+        }
+        static void Main()   
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

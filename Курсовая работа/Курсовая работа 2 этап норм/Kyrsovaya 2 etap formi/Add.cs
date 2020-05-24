@@ -29,6 +29,10 @@ namespace Kyrsovaya_2_etap_formi
                 MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
             else
             {
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
+                textBox4.Text = Program.Reg(textBox4.Text);
                 int number_of_parent = db.parents.Max(n => n.code_parent) + 1;
                 parents new_parent = new parents { code_parent = number_of_parent, surname_parent = textBox1.Text, name_parent = textBox2.Text, lastname_parent = textBox3.Text, adress = textBox4.Text };
                 db.parents.Add(new_parent);
@@ -63,11 +67,14 @@ namespace Kyrsovaya_2_etap_formi
         {
             if (dateTimePicker1.Value.AddYears(6) > DateTime.Now)
                 MessageBox.Show("Ученику меньше 6 лет");
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+            else if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
                 MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
 
             else
             {
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
                 var query = (from g in db.parents where g.surname_parent == comboBox1.SelectedItem.ToString() select g.code_parent).ToList();
                 int number_of_student = db.students.Max(n => n.code_stud) + 1;
                 students new_student = new students { code_stud = number_of_student, surname_stud = textBox1.Text, name_stud = textBox2.Text, lastname_stud = textBox3.Text, birthday_stud = Convert.ToDateTime(dateTimePicker1.Value), code_parent = query[0] };
@@ -82,6 +89,7 @@ namespace Kyrsovaya_2_etap_formi
                 MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
             else
             {
+                textBox2.Text = Program.Reg(textBox2.Text);
                 int number_of_sublect = db.subjects.Max(n => n.code_subject) + 1;
                 subjects new_subject = new subjects { code_subject = number_of_sublect, name_subj = textBox2.Text };
                 db.subjects.Add(new_subject);
@@ -92,17 +100,23 @@ namespace Kyrsovaya_2_etap_formi
         public void AddTeach(DateTimePicker dateTimePicker1, TextBox textBox1, TextBox textBox2,TextBox textBox3, TextBox textBox5)
         {
             if (dateTimePicker1.Value.AddYears(20) > DateTime.Now)
+            {
                 MessageBox.Show("Учителю меньше 20 лет");
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox5.Text == "")
-                MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
+            }
 
+            else if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox5.Text == "")
+                MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
             else
             {
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
+                textBox5.Text = Program.Reg(textBox5.Text);
                 int number_of_lector = db.lectors.Max(n => n.code_lector) + 1;
                 lectors new_lector = new lectors { code_lector = number_of_lector, surname_lector = textBox1.Text, name_lector = textBox2.Text, lastname_lector = textBox3.Text, birthday_lector = Convert.ToDateTime(dateTimePicker1.Value), post = textBox5.Text };
                 db.lectors.Add(new_lector);
                 db.SaveChanges();
-               
+
             }
         }
     }

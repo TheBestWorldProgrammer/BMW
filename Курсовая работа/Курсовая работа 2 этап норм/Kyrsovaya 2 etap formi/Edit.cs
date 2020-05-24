@@ -55,11 +55,14 @@ namespace Kyrsovaya_2_etap_formi
         {
             if (dateTimePicker1.Value.AddYears(6) > DateTime.Now)
                 MessageBox.Show("Ученику меньше 6 лет");
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
+           else if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "")
                 MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
 
             else
             {
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
                 var result = db.students.SingleOrDefault(w => w.code_stud == item.code_stud);
                 result.surname_stud = textBox2.Text.ToString();
                 result.name_stud = textBox1.Text.ToString();
@@ -74,10 +77,14 @@ namespace Kyrsovaya_2_etap_formi
         {
             if (dateTimePicker1.Value.AddYears(20) > DateTime.Now)
                 MessageBox.Show("Учителю меньше 20 лет");
-            if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox5.Text == "")
+            else if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == "" || textBox5.Text == "")
                 MessageBox.Show("Одно из полей пустое. Пожалуйста заполните информацию");
             else
             {
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
+                textBox5.Text = Program.Reg(textBox5.Text);
                 var result = db.lectors.SingleOrDefault(w => w.code_lector == item.code_lector);
                 result.surname_lector = textBox1.Text.ToString();
                 result.name_lector = textBox2.Text.ToString();

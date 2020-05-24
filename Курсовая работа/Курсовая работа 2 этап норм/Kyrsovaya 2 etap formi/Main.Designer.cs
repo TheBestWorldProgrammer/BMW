@@ -311,7 +311,8 @@
             // 
             // dataGridView4
             // 
-            this.dataGridView4.AllowUserToOrderColumns = true;
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
             this.dataGridView4.AutoGenerateColumns = false;
             this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -325,6 +326,7 @@
             this.dataGridView4.DataSource = this.lectorsBindingSource;
             this.dataGridView4.Location = new System.Drawing.Point(6, 31);
             this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.RowTemplate.Height = 24;
             this.dataGridView4.Size = new System.Drawing.Size(807, 346);
@@ -336,6 +338,7 @@
             this.code_lector.HeaderText = "Код преподавателя";
             this.code_lector.MinimumWidth = 6;
             this.code_lector.Name = "code_lector";
+            this.code_lector.ReadOnly = true;
             this.code_lector.Visible = false;
             this.code_lector.Width = 125;
             // 
@@ -345,6 +348,7 @@
             this.surnamelectorDataGridViewTextBoxColumn.HeaderText = "Фамилия";
             this.surnamelectorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.surnamelectorDataGridViewTextBoxColumn.Name = "surnamelectorDataGridViewTextBoxColumn";
+            this.surnamelectorDataGridViewTextBoxColumn.ReadOnly = true;
             this.surnamelectorDataGridViewTextBoxColumn.Width = 125;
             // 
             // namelectorDataGridViewTextBoxColumn
@@ -353,6 +357,7 @@
             this.namelectorDataGridViewTextBoxColumn.HeaderText = "Имя";
             this.namelectorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namelectorDataGridViewTextBoxColumn.Name = "namelectorDataGridViewTextBoxColumn";
+            this.namelectorDataGridViewTextBoxColumn.ReadOnly = true;
             this.namelectorDataGridViewTextBoxColumn.Width = 125;
             // 
             // lastnamelectorDataGridViewTextBoxColumn
@@ -361,6 +366,7 @@
             this.lastnamelectorDataGridViewTextBoxColumn.HeaderText = "Отчество";
             this.lastnamelectorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lastnamelectorDataGridViewTextBoxColumn.Name = "lastnamelectorDataGridViewTextBoxColumn";
+            this.lastnamelectorDataGridViewTextBoxColumn.ReadOnly = true;
             this.lastnamelectorDataGridViewTextBoxColumn.Width = 125;
             // 
             // birthdaylectorDataGridViewTextBoxColumn
@@ -369,6 +375,7 @@
             this.birthdaylectorDataGridViewTextBoxColumn.HeaderText = "Дата рождения";
             this.birthdaylectorDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.birthdaylectorDataGridViewTextBoxColumn.Name = "birthdaylectorDataGridViewTextBoxColumn";
+            this.birthdaylectorDataGridViewTextBoxColumn.ReadOnly = true;
             this.birthdaylectorDataGridViewTextBoxColumn.Width = 125;
             // 
             // postDataGridViewTextBoxColumn
@@ -377,6 +384,7 @@
             this.postDataGridViewTextBoxColumn.HeaderText = "Специальность";
             this.postDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.postDataGridViewTextBoxColumn.Name = "postDataGridViewTextBoxColumn";
+            this.postDataGridViewTextBoxColumn.ReadOnly = true;
             this.postDataGridViewTextBoxColumn.Width = 125;
             // 
             // lectorsBindingSource
@@ -451,7 +459,8 @@
             // 
             // dataGridView5
             // 
-            this.dataGridView5.AllowUserToOrderColumns = true;
+            this.dataGridView5.AllowUserToAddRows = false;
+            this.dataGridView5.AllowUserToDeleteRows = false;
             this.dataGridView5.AutoGenerateColumns = false;
             this.dataGridView5.BackgroundColor = System.Drawing.SystemColors.Window;
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -465,6 +474,7 @@
             this.dataGridView5.DataSource = this.studentsBindingSource;
             this.dataGridView5.Location = new System.Drawing.Point(6, 31);
             this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.ReadOnly = true;
             this.dataGridView5.RowHeadersWidth = 51;
             this.dataGridView5.RowTemplate.Height = 24;
             this.dataGridView5.Size = new System.Drawing.Size(807, 346);
@@ -476,6 +486,7 @@
             this.codestudDataGridViewTextBoxColumn.HeaderText = "Код студента";
             this.codestudDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codestudDataGridViewTextBoxColumn.Name = "codestudDataGridViewTextBoxColumn";
+            this.codestudDataGridViewTextBoxColumn.ReadOnly = true;
             this.codestudDataGridViewTextBoxColumn.Visible = false;
             this.codestudDataGridViewTextBoxColumn.Width = 125;
             // 
@@ -485,6 +496,7 @@
             this.surnamestudDataGridViewTextBoxColumn.HeaderText = "Фамилия";
             this.surnamestudDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.surnamestudDataGridViewTextBoxColumn.Name = "surnamestudDataGridViewTextBoxColumn";
+            this.surnamestudDataGridViewTextBoxColumn.ReadOnly = true;
             this.surnamestudDataGridViewTextBoxColumn.Width = 125;
             // 
             // namestudDataGridViewTextBoxColumn
@@ -493,6 +505,7 @@
             this.namestudDataGridViewTextBoxColumn.HeaderText = "Имя";
             this.namestudDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.namestudDataGridViewTextBoxColumn.Name = "namestudDataGridViewTextBoxColumn";
+            this.namestudDataGridViewTextBoxColumn.ReadOnly = true;
             this.namestudDataGridViewTextBoxColumn.Width = 125;
             // 
             // lastnamestudDataGridViewTextBoxColumn
@@ -501,6 +514,7 @@
             this.lastnamestudDataGridViewTextBoxColumn.HeaderText = "Отчество";
             this.lastnamestudDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.lastnamestudDataGridViewTextBoxColumn.Name = "lastnamestudDataGridViewTextBoxColumn";
+            this.lastnamestudDataGridViewTextBoxColumn.ReadOnly = true;
             this.lastnamestudDataGridViewTextBoxColumn.Width = 125;
             // 
             // birthdaystudDataGridViewTextBoxColumn
@@ -509,6 +523,7 @@
             this.birthdaystudDataGridViewTextBoxColumn.HeaderText = "Дата рождения";
             this.birthdaystudDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.birthdaystudDataGridViewTextBoxColumn.Name = "birthdaystudDataGridViewTextBoxColumn";
+            this.birthdaystudDataGridViewTextBoxColumn.ReadOnly = true;
             this.birthdaystudDataGridViewTextBoxColumn.Width = 125;
             // 
             // codeparentDataGridViewTextBoxColumn
@@ -517,6 +532,7 @@
             this.codeparentDataGridViewTextBoxColumn.HeaderText = "Код родителя";
             this.codeparentDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.codeparentDataGridViewTextBoxColumn.Name = "codeparentDataGridViewTextBoxColumn";
+            this.codeparentDataGridViewTextBoxColumn.ReadOnly = true;
             this.codeparentDataGridViewTextBoxColumn.Visible = false;
             this.codeparentDataGridViewTextBoxColumn.Width = 125;
             // 

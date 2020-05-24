@@ -22,6 +22,11 @@ namespace Kyrsovaya_2_etap_formi
             try
             {
                 Add add = new Add();
+                textBox1.Text = Program.Reg(textBox1.Text);
+                textBox2.Text = Program.Reg(textBox2.Text);
+                textBox3.Text = Program.Reg(textBox3.Text);
+                textBox5.Text = Program.Reg(textBox5.Text);
+
                 add.AddTeach(dateTimePicker1,textBox1,textBox2,textBox3,textBox5);
                 this.Close();
             }

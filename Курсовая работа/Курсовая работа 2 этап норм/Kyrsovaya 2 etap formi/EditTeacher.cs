@@ -30,6 +30,8 @@ namespace Kyrsovaya_2_etap_formi
         {
             try
             {
+               
+               
                 Edit edit = new Edit();
                 edit.EditTeach(dateTimePicker1,textBox1,textBox2,textBox3,textBox5,item);
                 this.Close();
