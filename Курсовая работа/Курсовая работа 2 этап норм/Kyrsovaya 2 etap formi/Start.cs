@@ -12,7 +12,6 @@ namespace Kyrsovaya_2_etap_formi
 {
     public partial class Start : Form
     {
-      
         public Start()
         {
             InitializeComponent();
@@ -27,14 +26,21 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
-            string login = textBox1.Text.Trim();
-            string password = textBox2.Text;
-            User userEnter = new User(login, password);
-            userEnter.Check();
-            if (Application.OpenForms.Count == 2)
-                this.Hide();
-            
+            try
+            {
+                string login = textBox1.Text.Trim();
+                string password = textBox2.Text;
+                User userEnter = new User(login, password);
+                userEnter.Check();
+                if (Application.OpenForms.Count == 2)
+                {
+                    this.Hide();
+                }
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,5 +53,7 @@ namespace Kyrsovaya_2_etap_formi
         {
             if (e.KeyCode == Keys.Enter) button1.PerformClick();
         }
+
+      
     }
 }

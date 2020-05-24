@@ -68,7 +68,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric1;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -81,7 +82,7 @@
             this.button4.Location = new System.Drawing.Point(216, 232);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 38);
-            this.button4.TabIndex = 29;
+            this.button4.TabIndex = 27;
             this.button4.Text = "Обновить";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -91,7 +92,7 @@
             this.button3.Location = new System.Drawing.Point(416, 158);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(115, 42);
-            this.button3.TabIndex = 28;
+            this.button3.TabIndex = 25;
             this.button3.Text = "Добавить родителя";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -112,14 +113,14 @@
             this.comboBox1.Location = new System.Drawing.Point(124, 168);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(286, 24);
-            this.comboBox1.TabIndex = 26;
+            this.comboBox1.TabIndex = 24;
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(343, 232);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 38);
-            this.button2.TabIndex = 25;
+            this.button2.TabIndex = 28;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -129,7 +130,7 @@
             this.button1.Location = new System.Drawing.Point(91, 232);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 38);
-            this.button1.TabIndex = 24;
+            this.button1.TabIndex = 26;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -147,6 +148,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(136, 22);
             this.textBox3.TabIndex = 22;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // textBox2
             // 
@@ -154,6 +156,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(136, 22);
             this.textBox2.TabIndex = 21;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
             // 
@@ -161,6 +164,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(136, 22);
             this.textBox1.TabIndex = 20;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // label4
             // 
@@ -223,6 +227,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "AddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление ученика";

@@ -38,7 +38,8 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric;
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric1;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -52,6 +53,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(183, 22);
             this.textBox2.TabIndex = 35;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // label1
             // 
@@ -68,7 +70,7 @@
             this.button2.Location = new System.Drawing.Point(321, 199);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 38);
-            this.button2.TabIndex = 33;
+            this.button2.TabIndex = 37;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -78,7 +80,7 @@
             this.button1.Location = new System.Drawing.Point(119, 199);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 38);
-            this.button1.TabIndex = 32;
+            this.button1.TabIndex = 36;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -94,6 +96,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "AddSubject";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление предмета";

@@ -48,7 +48,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric;
+            this.pictureBox1.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric1;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -73,7 +73,7 @@
             this.comboBox4.Location = new System.Drawing.Point(192, 188);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(121, 24);
-            this.comboBox4.TabIndex = 51;
+            this.comboBox4.TabIndex = 44;
             // 
             // label5
             // 
@@ -90,7 +90,7 @@
             this.button4.Location = new System.Drawing.Point(202, 227);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(99, 38);
-            this.button4.TabIndex = 49;
+            this.button4.TabIndex = 47;
             this.button4.Text = "Обновить";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -100,7 +100,7 @@
             this.button3.Location = new System.Drawing.Point(319, 103);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(135, 44);
-            this.button3.TabIndex = 48;
+            this.button3.TabIndex = 45;
             this.button3.Text = "Добавить новый предмет";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -181,7 +181,7 @@
             this.button2.Location = new System.Drawing.Point(319, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 38);
-            this.button2.TabIndex = 39;
+            this.button2.TabIndex = 48;
             this.button2.Text = "Отмена";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -191,7 +191,7 @@
             this.button1.Location = new System.Drawing.Point(85, 227);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 38);
-            this.button1.TabIndex = 38;
+            this.button1.TabIndex = 46;
             this.button1.Text = "Сохранить";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -217,6 +217,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "AddShedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление расписания";

@@ -63,9 +63,9 @@ namespace Kyrsovaya_2_etap_formi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _001 {
+        internal static System.Drawing.Bitmap _0011 {
             get {
-                object obj = ResourceManager.GetObject("001", resourceCulture);
+                object obj = ResourceManager.GetObject("0011", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,10 +73,10 @@ namespace Kyrsovaya_2_etap_formi.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric {
+        internal static System.Drawing.Bitmap university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric1 {
             get {
                 object obj = ResourceManager.GetObject("university-of-nicosia-medical-school-university-of-south-florida-college-of-medic" +
-                        "ine-st-george-s-university-of-london-geometric", resourceCulture);
+                        "ine-st-george-s-university-of-london-geometric1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

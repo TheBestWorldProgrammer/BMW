@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,7 @@ namespace Kyrsovaya_2_etap_formi
         {
             item = stud;
             InitializeComponent();         
-            var groups_for_list = (from g in db.parents select g.surname_parent).Distinct();
+            var groups_for_list = (from g in db.parents orderby g.code_parent select g.surname_parent).Distinct();
             foreach (string it in groups_for_list)
                 comboBox1.Items.Add(it);
             textBox1.Text = item.name_stud.ToString();
@@ -31,18 +32,17 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var result = ((Main)Owner).db.students.SingleOrDefault(w => w.code_stud == item.code_stud);
-            result.surname_stud = textBox2.Text.ToString();
-            result.name_stud = textBox1.Text.ToString();
-            result.lastname_stud = textBox3.Text.ToString();
-            result.birthday_stud = dateTimePicker1.Value.ToUniversalTime();
-            var query = (from g in db.parents where g.surname_parent == comboBox1.SelectedItem.ToString() select g.code_parent).ToList();
-            result.code_parent = query[0];
-            ((Main)Owner).studentsheet = ((Main)Owner).db.students.OrderBy(o => o.code_stud).ToList();
-            ((Main)Owner).db.SaveChanges();
-            this.Close();
-            
-        
+            try
+            {
+                Edit edit = new Edit();
+                edit.EditStud(dateTimePicker1,textBox1,textBox2,textBox3,comboBox1,item);
+                this.Close();
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -50,5 +50,31 @@ namespace Kyrsovaya_2_etap_formi
             this.Close();
         }
 
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

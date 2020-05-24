@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,13 +17,6 @@ namespace Kyrsovaya_2_etap_formi
         {
             InitializeComponent();
         }
-        public SchoolEntitiesTrue db = new SchoolEntitiesTrue();
-        public List<parents> parentsheet;
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,11 +24,53 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int number_of_parent = db.parents.Max(n => n.code_parent) + 1;
-            parents new_parent = new parents {code_parent = number_of_parent, surname_parent = textBox1.Text, name_parent = textBox2.Text, lastname_parent = textBox3.Text,adress=textBox4.Text };
-            db.parents.Add(new_parent);
-            db.SaveChanges();          
-            this.Close();
+            try
+            {
+                Add add = new Add();
+                add.AddPar(textBox1,textBox2,textBox3,textBox4);
+                this.Close();
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

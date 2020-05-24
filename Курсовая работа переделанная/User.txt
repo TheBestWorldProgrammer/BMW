@@ -1,6 +1,0 @@
-Логин Пароль Роль
-admin admin Администратор
-stud stud Ученик
-par par Родитель
-teach teach Учитель
-buh buh Бухгалтер

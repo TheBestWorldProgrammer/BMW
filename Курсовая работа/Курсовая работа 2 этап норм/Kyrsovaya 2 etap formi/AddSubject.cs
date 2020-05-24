@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,7 +13,6 @@ namespace Kyrsovaya_2_etap_formi
 {
     public partial class AddSubject : Form
     {
-        public SchoolEntitiesTrue db = new SchoolEntitiesTrue();
         public AddSubject()
         {
             InitializeComponent();
@@ -25,11 +25,25 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int number_of_sublect = db.subjects.Max(n => n.code_subject) + 1;
-            subjects new_subject = new subjects { code_subject = number_of_sublect, name_subj=textBox2.Text };
-            db.subjects.Add(new_subject);
-            db.SaveChanges();
-            this.Close();
+            try
+            {
+                Add add = new Add();
+                add.AddSub(textBox2);
+                this.Close();
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

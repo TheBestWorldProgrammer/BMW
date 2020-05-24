@@ -89,6 +89,10 @@
             this.lectorsTableAdapter = new Kyrsovaya_2_etap_formi.SchoolDataSet2TableAdapters.lectorsTableAdapter();
             this.studentsTableAdapter = new Kyrsovaya_2_etap_formi.SchoolDataSet2TableAdapters.studentsTableAdapter();
             this.schoolDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.salaryBindingSource)).BeginInit();
@@ -666,21 +670,66 @@
             // 
             this.studentsTableAdapter.ClearBeforeFill = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(71, 45);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(236, 17);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Добро пожаловать в СУБД школа ";
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(33, 237);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(320, 106);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Для продолжения работы выберите одну из нижепредложенных вкладок ";
+            // 
+            // label9
+            // 
+            this.label9.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(33, 129);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(320, 108);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Данная система позволяет хранить и обрабатыать информацию об учашихся, а также ра" +
+    "ботников школы";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(64, 67);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(266, 62);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "Добро пожаловать в СУБД школа ";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric;
+            this.BackgroundImage = global::Kyrsovaya_2_etap_formi.Properties.Resources.university_of_nicosia_medical_school_university_of_south_florida_college_of_medicine_st_george_s_university_of_london_geometric1;
             this.ClientSize = new System.Drawing.Size(1221, 562);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная страница";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
@@ -774,5 +823,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn lastnamelectorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn birthdaylectorDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn postDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
     }
 }

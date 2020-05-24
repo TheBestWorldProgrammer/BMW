@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace Kyrsovaya_2_etap_formi
         {
             InitializeComponent();
            
-            var groups_for_list = (from g in db.parents select g.surname_parent).Distinct();
+            var groups_for_list = (from g in db.parents orderby g.code_parent select g.surname_parent).Distinct();
             foreach (string it in groups_for_list)
                 comboBox1.Items.Add(it);
         }
@@ -31,16 +32,16 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-                var query = (from g in db.parents where g.surname_parent == comboBox1.SelectedItem.ToString() select g.code_parent).ToList();
-                int number_of_student = db.students.Max(n => n.code_stud) + 1;
-                students new_student = new students { code_stud = number_of_student, surname_stud = textBox1.Text, name_stud = textBox2.Text, lastname_stud = textBox3.Text, birthday_stud = Convert.ToDateTime(dateTimePicker1.Value), code_parent = query[0] };
-                ((Main)Owner).db.students.Add(new_student);
-                ((Main)Owner).studentsheet = ((Main)Owner).db.students.OrderBy(o => o.code_stud).ToList();
-                ((Main)Owner).db.SaveChanges();
+            try
+            {
+                Add add = new Add();
+                add.AddStud(dateTimePicker1,textBox1,textBox2,textBox3,comboBox1);
                 this.Close();
-            
-           
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
         }
            
         private void button2_Click(object sender, EventArgs e)
@@ -60,6 +61,33 @@ namespace Kyrsovaya_2_etap_formi
             var groups_for_list = (from g in db.parents select g.surname_parent).Distinct();
             foreach (string it in groups_for_list)
                 comboBox1.Items.Add(it);
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string Symbol = e.KeyChar.ToString();
+            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            {
+                e.Handled = true;
+            }
         }
     }
 }

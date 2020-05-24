@@ -18,13 +18,14 @@ namespace Kyrsovaya_2_etap_formi
         {        
             item = sal;
             InitializeComponent();
-            var groups_for_list = (from g in db.lectors select g.surname_lector).Distinct();
+            var groups_for_list = (from g in db.lectors orderby g.code_lector select g.surname_lector).Distinct();
             foreach (string it in groups_for_list)
                 comboBox1.Items.Add(it);
             numericUpDown2.Value = Convert.ToInt32(item.experience);
             numericUpDown3.Value = Convert.ToInt32(item.work_hour);
             numericUpDown1.Value = Convert.ToInt32(item.summ);
-            textBox3.Text = item.mounth.ToString();
+            var query1 = (from g in db.salary where g.code_salary == item.code_salary select g.mounth).ToList();
+            comboBox2.SelectedItem = query1[0];
             var query = (from g in db.lectors where g.code_lector == item.code_lector select g.surname_lector).ToList();
             comboBox1.SelectedItem = query[0];
         }
@@ -36,16 +37,17 @@ namespace Kyrsovaya_2_etap_formi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var result = ((Main)Owner).db.salary.SingleOrDefault(w => w.code_salary == item.code_salary);
-            result.experience = Convert.ToInt32(numericUpDown2.Value);
-            result.work_hour = Convert.ToInt32(numericUpDown3.Value);
-            result.summ = Convert.ToInt32(numericUpDown1.Value);
-            result.mounth = textBox3.Text.ToString();
-            var query = (from g in db.lectors where g.surname_lector == comboBox1.SelectedItem.ToString() select g.code_lector).ToList();
-            result.code_lector = query[0];
-            ((Main)Owner).salarysheet = ((Main)Owner).db.salary.OrderBy(o => o.code_salary).ToList();
-            ((Main)Owner).db.SaveChanges();
-            this.Close();
+            try {
+                Edit edit = new Edit();
+                edit.EditSal(numericUpDown1,numericUpDown2,numericUpDown3,comboBox1,  comboBox2,  item);
+                this.Close();
+            }
+            catch (Exception z)
+            {
+                MessageBox.Show(z.Message);
+            }
         }
+
+       
     }
 }
