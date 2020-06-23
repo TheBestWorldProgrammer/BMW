@@ -1,0 +1,13 @@
+CREATE TABLE Subjects(
+	Code_subject serial NOT NULL primary key,
+	Name_subj varchar(50) NOT NULL);
+Insert into Subjects (Name_subj)
+Values ('СИИ');
+Insert into Subjects (Name_subj)
+Values ('ПИС');
+Insert into Subjects (Name_subj)
+Values ('ЧМ');
+Insert into Subjects (Name_subj)
+Values ('ВП');
+Insert into Subjects (Name_subj)
+Values ('МО');
